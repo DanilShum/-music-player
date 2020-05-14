@@ -93,16 +93,20 @@ img.player__poster-target {
     
 }
 .player__listing li {
-    padding: 10px 0 10px 10px;
+    list-style: none;
     cursor: pointer;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     transition: background ease-in-out 0.1s;
+    
 }
-.player__listing li:not(:first-child) {
+.player__listing li > a {
+    display: block;
+    padding: 10px 0 10px 15px;
     border-top: 1px solid #ccc;
 }
+
 .player__listing li:hover {
     background: #ccc;
 }
@@ -177,6 +181,7 @@ img.player__poster-target {
 .player__control {
     margin: 25px 0;
 }
+
 .player__play {
     height: 60px;
     width: 60px;
@@ -186,7 +191,17 @@ img.player__poster-target {
     margin: 0 40px;
     transition: transform ease-in-out 0.1s;
 }
-.player__play::before {
+.player__play.pause::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 20px;
+    height: 30px;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+.player__play.start::before {
     content: '';
     display: inline-block; 
     border: 12px solid transparent;
