@@ -103,8 +103,13 @@ img.player__poster-target {
 }
 .player__listing li > a {
     display: block;
-    padding: 10px 0 10px 15px;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 10px 10px 15px;
     border-top: 1px solid #ccc;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .player__listing li:hover {
