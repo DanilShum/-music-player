@@ -4,10 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>music player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <main class="player">
+        <section class="player__wrapper">
+            <h1 class="player__title">Playlist: Pop</h1>
+            <div class="player__playlist">
+                <!-- <input type="checkbox" id="player__btn-listing">
+                <label for="player__btn-listing"> <span>37</span>songs</label> -->
+                <button class="player__btn-listing"><span>37</span> songs</button>
+                <ul class="player__listing">
+                    <li>Lorem, ipsum.</li>
+                    <li>Dolore, magni!</li>
+                    <li >Itaque, possimus!Itaque, possimus!Itaque, possimus!</li>
+                    <li class="player__listing-target">Et, ratione?</li>
+                    <li>Quia, quas.</li>
+                    <li>Accusamus, praesentium!</li>
+                    <li>Vel, voluptatem!</li>
+                    <li >Quis, non!</li>
+                    <li>Nostrum, consequatur?</li>
+                    <li>Dolore, corporis.</li>
+                    <li>Asperiores, eius.</li>
+                    <li>Totam, quidem?</li>
+                    <li>Magnam, beatae!</li>
+                    <li>Illum, dolore?</li>
+                    <li>Aliquid, cumque!</li>
+                    <li>Corrupti, nemo.</li>
+                    <li>Dolores, obcaecati.</li>
+                    <li>Culpa, fugit!</li>
+                    <li>Nostrum, provident.</li>
+                    <li>Fuga, sapiente.</li>
+                    <li>Hic, neque!</li>
+                    <li>Ratione, natus.</li>
+                    <li>In, dignissimos.</li>
+                    <li>Magnam, iste?</li>
+                    <li>Exercitationem, sed.</li>
+                    <li>Ipsam, iste.</li>
+                    <li>Quidem, cum.</li>
+                    <li>Nihil, soluta?</li>
+                    <li>Alias, repellat.</li>
+                    <li>Explicabo, ab.</li>
+                    <li>Soluta, quas.</li>
+                    <li>Mollitia, iure.</li>
+                    <li>Labore, asperiores.</li>
+                    <li>Excepturi, illo?</li>
+                    <li>Voluptates, impedit.</li>
+                    <li>Hic, illum!</li>
+                    <li>Voluptas, eius.</li>
+                </ul>
+            </div>
+            <figure class="player__poster">
+                <img src="img/album1.jpg" alt="poster1">
+                <img class="player__poster-target" src="img/album2.jpg" alt="poster2">
+                <img src="img/album3.jpg" alt="poster3">
+                
+                <!-- <img src="img/album4.jpg" alt="poster4">
+                <img src="img/album5.jpg" alt="poster5">
+                <img src="img/album6.jpg" alt="poster6">
+                <img src="img/album7.jpg" alt="poster7">
+                <img src="img/album8.jpg" alt="poster8">
+                <img src="img/album9.jpg" alt="poster9">
+                <img src="img/album10.jpg" alt="poster10">
+                <img src="img/album11.jpg" alt="poster11">
+                <img src="img/album12.jpg" alt="poster12">
+                <img src="img/album13.jpg" alt="poster13">
+                <img src="img/album14.jpg" alt="poster14">
+                <img src="img/album15.jpg" alt="poster15">
+                <img src="img/album16.jpg" alt="poster16">
+                <img src="img/album17.jpg" alt="poster17">
+                <img src="img/album18.jpg" alt="poster18">
+                <img src="img/album19.jpg" alt="poster19">
+                <img src="img/album20.jpg" alt="poster20">
+                <img src="img/album21.jpg" alt="poster21">
+                <img src="img/album22.jpg" alt="poster22">
+                <img src="img/album23.jpg" alt="poster23">
+                <img src="img/album24.jpg" alt="poster24">
+                <img src="img/album25.jpg" alt="poster25">
+                <img src="img/album26.jpg" alt="poster26">
+                <img src="img/album27.jpg" alt="poster27">
+                <img src="img/album28.jpg" alt="poster28">
+                <img src="img/album29.jpg" alt="poster29">
+                <img src="img/album30.jpg" alt="poster30">
+                <img src="img/album31.jpg" alt="poster31">
+                <img src="img/album32.jpg" alt="poster32">
+                <img src="img/album33.jpg" alt="poster33">
+                <img src="img/album34.jpg" alt="poster34">
+                <img src="img/album35.jpg" alt="poster35">
+                <img src="img/album36.jpg" alt="poster36">
+                <img src="img/album37.jpg" alt="poster37"> -->
+            </figure>
+                
+
+        </section>
+           
+        
+        <section class="player__name posicioner">
+            <strong class="player__name-song">
+                S&M
+            </strong>
+            <div class="player__singer">
+                Rihanna – Loud
+            </div>
+        </section>
+        <section class="player__progress posicioner">
+            <time class="player__start">0:28</time>
+            <div class="player__time-line">
+                <div class="player__dot"></div>
+            </div>
+            <time class="player__end">3:48</time>
+        </section>
+        <section class="player__control posicioner">
+            <button class="player__btn prev">
+                <svg>
+                    <path d="M24 16L12.6 8.7 12.6 16 0 8 12.6 0 12.6 7.3 24 0 24 16Z"></path>
+                </svg>
+                
+            </button>
+            <button class="player__play">
+               
+            </button>
+            <button class="player__btn next">
+                <svg>
+                    <path d="M24 16L12.6 8.7 12.6 16 0 8 12.6 0 12.6 7.3 24 0 24 16Z"></path>
+                </svg>
+            </button>
+        </section>
+            
+    </main>
+
 
     
     <script src="main.js"></script>
